@@ -9,12 +9,12 @@ const sortOrder = (a, z) => {
 export default function listCulture(start,end){
     let files  = [];
 
-    function ThroughDirectory(dir) {
+    function ThroughDirectory(dir,addSlug="") {
       fs.readdirSync(dir).forEach(filename => {
           const absolute = path.join(dir, filename);
-          if (fs.statSync(absolute).isDirectory()) return ThroughDirectory(absolute);
+          if (fs.statSync(absolute).isDirectory()) return ThroughDirectory(absolute,addSlug+filename+"/");
           else {
-            const slug = filename.replace(".md", "");
+            const slug = addSlug+filename.replace(".md", "");
             const markdown = fs.readFileSync(
               absolute,
               "utf-8"
