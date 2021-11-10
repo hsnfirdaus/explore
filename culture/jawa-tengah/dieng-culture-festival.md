@@ -2,8 +2,9 @@
 title: 'Dieng Culture Festival'
 location: 'Wonosobo, Jawa Tengah'
 teaser: 'This is a short teaser for the first blog post.'
-published: 'January 1, 2021'
+published: 'October 10, 2021'
 thumbnail: '/assets/images/1600246010-xgoy1709.webp'
+category: 'festival'
 ---
 
 Accusamus perferendis **voluptatibus** enim et. Cupiditate dolorum

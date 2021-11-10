@@ -1,6 +1,8 @@
 body {
     line-height: 1.5;
     --bg:#111111;
+    --bg2: #333;
+    --bg3: #555;
     --bg-filter:#11111155;
     --text:#fff;
     --text-primary:#111;
@@ -8,10 +10,16 @@ body {
     --header-border:#fff2;
     background-color: var(--bg);
     color: var(--text);
+    line-height: 1.5;
+}
+.center {
+    text-align: center;
 }
 .wrap {
     max-width: 1400px;
     margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 #header {
     position: fixed;
@@ -20,6 +28,10 @@ body {
     right: 0;
     z-index: 1000;
     border-bottom: 2px solid var(--header-border);
+}
+#header.scrolled {
+    background-color: var(--header-border);
+    backdrop-filter: blur(5px);
 }
 #header h1 {
     font-size: 30pt;
@@ -32,6 +44,7 @@ body {
     display: grid;
     grid-template-columns: auto minmax(10px,100fr);
     align-items: center;
+    position: relative;
 }
 #header .navigation {
     text-align: right;
@@ -45,9 +58,15 @@ body {
 #header .navigation ul li a {
     padding: 10px;
     text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#header .navigation ul li a:hover {
+   color: var(--primary);
 }
 #hero {
-    min-height: 800px;
+    max-height: 100vh;
+    height: 800px;
     position: relative;
     width: 100%;
     color: #fff;
@@ -98,6 +117,132 @@ body {
     display: inline-block;
     font-weight: bold;
     padding: 5px 20px;
-    box-shadow: 5px 5px 0px var(--bg);
     border: 1px solid var(--bg);
+    transition: .3s linear;
+}
+.primary-btn a:hover {
+    box-shadow: 5px 5px 0px var(--bg);
+}
+#explore-culture {
+    padding: 40px 0;
+}
+h3 {
+    font-size: 30pt;
+    padding: 10px 0;
+}
+.culture-list {
+    display: grid;
+    grid-template-columns: repeat(5, 20fr);
+    grid-column-gap: 20px;
+}
+.culture-list .culture-item {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.culture-list .culture-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+}
+.culture-list .culture-item:hover img {
+    transform: scale(1.1);
+}
+.culture-list .culture-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top,#000f,#0000);
+}
+.culture-list .culture-item h4 {
+    font-family: 'Raleway',sans-serif;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 14pt;
+}
+#explore-province {
+    padding: 40px 0;
+}
+.province-area{fill:var(--bg2);}
+.st1{fill:none;stroke:var(--bg3);stroke-width:1.5;stroke-linecap:round;}
+.st2{fill:none;stroke:var(--bg3);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+.st3{fill:none;}
+.st4{fill:none;stroke:var(--bg3);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.province-area.active {
+    fill: var(--primary);
+}
+.province-map-popup {
+    position: fixed;
+    transform: translateY(-50%);
+    background-color: var(--bg2);
+    border: 2px solid var(--primary);
+    box-shadow: 4px 4px 0px var(--primary);
+    padding: 10px;
+}
+.province-map-popup h4 {
+    font-size: 18pt;
+}
+.province-map-popup ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+.province-map-popup ul li a {
+    display: block;
+    padding: 5px 0;
+}
+.province-map-popup .more {
+    background-color: var(--primary);
+    width: 100%;
+    color: var(--bg);
+    padding: 5px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+#recently-added {
+    padding: 40px 0;
+}
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(3,33.33fr);
+    grid-column-gap: 20px;
+}
+.culture img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    transition: .5s;
+}
+.culture:hover img {
+    transform: scale(1.05);
+}
+.culture h4 {
+    font-size: 20pt;
+    color: var(--primary);
+}
+.culture .culture-location {
+    display: flex;
+    font-size: 12pt;
+}
+.culture .culture-location svg {
+    margin-right: 10px;
 }
