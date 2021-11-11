@@ -15,16 +15,18 @@ export default function Index({ hero, cultureList, provinceData }) {
         <meta name="description" content={CONFIG.DESCRIPTION} />
       </Head>
       <Layout>
-        <section id="hero">
-          <img src={hero.frontmatter.thumbnail} className="hero-bg"/>
-          <div className="hero-text">
-            <div className="wrap">
-              <div className="hero-location"><MapPin/>{hero.frontmatter.location}</div>
-              <h2>{hero.frontmatter.title}</h2>
-              <div className="primary-btn"><Link href={hero.slug}>Read More</Link></div>
+        {hero?(
+          <section id="hero">
+            <img src={hero.frontmatter.thumbnail} className="hero-bg"/>
+            <div className="hero-text">
+              <div className="wrap">
+                <div className="hero-location"><MapPin/>{hero.frontmatter.location}</div>
+                <h2>{hero.frontmatter.title}</h2>
+                <div className="primary-btn"><Link href={hero.slug}>Read More</Link></div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        ):<></>}
         <section id="explore-culture">
           <div className="wrap">
             <h3>Explore Culture</h3>

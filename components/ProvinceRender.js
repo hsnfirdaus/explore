@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 export default function ProvinceRender({provinceData}){
+	const mapRef=useRef();
 	const [province,setProvince]=useState(null);
 	const [mouse,setMouse]=useState({
 		x:0,
@@ -8,9 +9,11 @@ export default function ProvinceRender({provinceData}){
 	});
 	const handleProvince=(ev,isoProv)=>{
 		if(isoProv!==province){
+			let parentdiv=mapRef.current;
+			console.log(ev);
 			setMouse({
-				x:ev.clientX,
-				y:ev.clientY
+				x:ev.pageX-parentdiv.offsetLeft,
+				y:ev.pageY-parentdiv.offsetTop
 			});
 			setProvince(isoProv);
 		}
@@ -20,7 +23,7 @@ export default function ProvinceRender({provinceData}){
 	}
 	return (
 		<>
-			<div className="province-map" onMouseLeave={handleReset}>
+			<div ref={mapRef} className="province-map" onMouseLeave={handleReset}>
 				{province&&provinceData&&provinceData[province]?(
 					<div className="province-map-popup" style={{top:mouse.y+'px',left:mouse.x+'px'}}>
 						<h4>{provinceData[province].name}</h4>

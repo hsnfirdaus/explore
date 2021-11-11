@@ -1,10 +1,8 @@
 import Head from "next/head";
-import Link from "next/link";
 import Layout from "../../components/Layout";
 import Culture from "../../components/Culture";
 import CONFIG from "../../const/config";
 import listCulture from "../../helper/listCulture";
-import { MapPin } from 'react-feather';
 export default function Index({ cultureList, category }) {
   return (
     <>
@@ -50,7 +48,6 @@ export async function getStaticPaths() {
       });
     }
   });
-  console.log(listPath);
   return {
     paths:listPath,
     fallback: false,

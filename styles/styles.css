@@ -1,6 +1,7 @@
 body {
     line-height: 1.5;
     --bg:#111111;
+    --bg1:#222;
     --bg2: #333;
     --bg3: #555;
     --bg-filter:#11111155;
@@ -8,6 +9,7 @@ body {
     --text-primary:#111;
     --primary:#F2D056;
     --header-border:#fff2;
+    --header-backdrop:#111a;
     background-color: var(--bg);
     color: var(--text);
     line-height: 1.5;
@@ -30,7 +32,7 @@ body {
     border-bottom: 2px solid var(--header-border);
 }
 #header.scrolled {
-    background-color: var(--header-border);
+    background-color: var(--header-backdrop);
     backdrop-filter: blur(5px);
 }
 #header h1 {
@@ -63,6 +65,24 @@ body {
 }
 #header .navigation ul li a:hover {
    color: var(--primary);
+}
+#header .navigation ul li.has-children svg {
+    height: 14pt;
+}
+#header .navigation ul li.has-children {
+    position: relative;
+}
+#header .navigation ul li.has-children ul.children {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--bg2);
+    text-align: left;
+    transition: .2s linear;
+}
+#header .navigation ul li.has-children:hover ul.children {
+    opacity: 1;
+    visibility: visible;
 }
 #hero {
     max-height: 100vh;
@@ -134,6 +154,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(5, 20fr);
     grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 .culture-list .culture-item {
     position: relative;
@@ -188,10 +209,14 @@ h3 {
 .st4{fill:none;stroke:var(--bg3);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 .province-area.active {
     fill: var(--primary);
+    transition: .5s;
+}
+.province-map {
+    position: relative;
 }
 .province-map-popup {
-    position: fixed;
-    transform: translateY(-50%);
+    position: absolute;
+    transform: translate(-100%,-100%);
     background-color: var(--bg2);
     border: 2px solid var(--primary);
     box-shadow: 4px 4px 0px var(--primary);
@@ -224,6 +249,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3,33.33fr);
     grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 .culture img {
     width: 100%;
@@ -245,4 +271,147 @@ h3 {
 }
 .culture .culture-location svg {
     margin-right: 10px;
+}
+#profile {
+    padding: 40px 0;
+}
+.profile {
+    display: grid;
+    grid-template-columns: 300px minmax(10px,100fr);
+    column-gap: 40px;
+}
+.profile p {
+    margin-bottom: 20px;
+}
+.profile img {
+    max-width: 100%;
+}
+ul.list {
+    margin-left: 20px;
+}
+ul.socmed {
+    list-style: none;
+}
+ul.socmed li {
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+}
+ul.socmed li svg {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: var(--primary);
+    color: var(--text-primary);
+    margin: 2px 0;
+    margin-right: 5px;
+}
+
+#single-culture {
+    padding: 40px 0;
+    line-height: 1.5;
+}
+#hero .culture-location {
+    display: inline-flex;
+    align-items: center;
+}
+#hero .culture-location svg {
+    margin-right: 10px;
+}
+#single-culture p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.culture-content {
+    max-width: 1000px;
+    margin: auto;
+}
+#single-culture img {
+    max-width: calc( 100% + 100px );
+    margin-left: -50px;
+    margin-right: -50px;
+}
+.primary-text {
+    color: var(--primary);
+}
+.supported {
+    background-color: var(--bg1);
+    text-align: center;
+}
+.supported h3 {
+    font-size: 20pt;
+}
+#copyright {
+    background-color: var(--bg2);
+    font-weight: bold;
+    padding: 40px 0;
+    font-size: 14pt;
+}
+.support-logo {
+    padding: 10px;
+}
+.support-logo img {
+    max-height: 100px;
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.mobile-toggle {
+    display: none;
+}
+.right {
+    text-align: right;
+}
+.menu-btn {
+    background-color: unset;
+    color: var(--text);
+    border: none;
+}
+@media screen  and (max-width:425px) {
+    .culture-grid {
+        grid-template-columns: 1fr;
+    }
+    .culture-list {
+        grid-template-columns: repeat(2, 50fr);
+    }
+    #hero .hero-text {
+        text-align: center;
+    }
+    .hero-location {
+        display: inline-flex;
+    }
+    .mobile-toggle {
+        display: inline-block;
+    }
+    #header .navigation {
+        position: fixed;
+        right: 0;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        border-bottom: 1px solid var(--header-border);
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s linear;
+    }
+    #header .navigation.show {
+        visibility: visible;
+        opacity: 1;
+        top: 80px;
+    }
+    #header.scrolled .navigation {
+        background-color: var(--bg1);
+    }
+    .wrap {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #hero {
+        height: 500px;
+    }
+    #single-culture img {
+        margin-left: -10px;
+        margin-right: -10px;
+        max-width: calc( 100% + 20px);
+    }
 }
