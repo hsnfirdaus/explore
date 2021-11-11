@@ -202,11 +202,34 @@ h3 {
 #explore-province {
     padding: 40px 0;
 }
-.province-area{fill:var(--bg2);}
-.st1{fill:none;stroke:var(--bg3);stroke-width:1.5;stroke-linecap:round;}
-.st2{fill:none;stroke:var(--bg3);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
-.st3{fill:none;}
-.st4{fill:none;stroke:var(--bg3);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.province-area {
+    fill:var(--bg2);
+    cursor: pointer;
+}
+.st1 {
+    fill:none;
+    stroke:var(--bg3);
+    stroke-width:1.5;
+    stroke-linecap:round;
+}
+.st2 {
+    fill:none;
+    stroke:var(--bg3);
+    stroke-width:1.5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+.st3 {
+    fill:none;
+}
+.st4 {
+    fill:none;
+    stroke:var(--bg3);
+    stroke-width:1.5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+}
 .province-area.active {
     fill: var(--primary);
     transition: .5s;
@@ -277,7 +300,7 @@ h3 {
 }
 .profile {
     display: grid;
-    grid-template-columns: 300px minmax(10px,100fr);
+    grid-template-columns: 20fr minmax(10px,100fr);
     column-gap: 40px;
 }
 .profile p {
@@ -413,5 +436,15 @@ ul.socmed li svg {
         margin-left: -10px;
         margin-right: -10px;
         max-width: calc( 100% + 20px);
+    }
+    .profile {
+        grid-template-columns: 1fr;
+    }
+    .profile figure {
+        text-align: center
+    }
+    .profile img {
+        max-width: 150px;
+        margin: auto;
     }
 }
