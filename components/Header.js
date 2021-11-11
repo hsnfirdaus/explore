@@ -39,7 +39,7 @@ const Header = () => {
                         {Object.keys(CONFIG.CATEGORY_LIST).map((slug)=>{
                             let object=CONFIG.CATEGORY_LIST[slug];
                             return (
-                            <li><Link key={slug} href={"/explore/"+slug}>{object.name}</Link></li>
+                            <li key={slug}><Link key={slug} href={"/explore/"+slug}>{object.name}</Link></li>
                             )
                         })}
                         </ul>

@@ -38,7 +38,7 @@ export default function References() {
             </div>
             <div className="ref-item">
               <h4><a href="https://fonts.google.com">Google Fonts</a></h4>
-              <p>Arima Madurai and Raleway font that's hosted in Google Fonts.</p>
+              <p>Arima Madurai and Raleway font that is hosted in Google Fonts.</p>
             </div>
             <div className="ref-item">
               <h4><a href="https://commons.wikimedia.org/wiki/File:Indonesian_provinces_blank.svg">Indonesian Provinces Map</a></h4>
@@ -49,18 +49,18 @@ export default function References() {
               <h4><a href="https://wonderfulimage.id/">WonderfulImage.id</a></h4>
               <p>Many of images are from wonderfulimage.id and also content is translated from this website.</p>
               <ul>
-                <li><a href="https://wonderfulimage.id/read/301/dieng-culture-festival" target="_blank">https://wonderfulimage.id/read/301/dieng-culture-festival</a></li>
-                <li><a href="https://wonderfulimage.id/read/429/kemegahan-istana-basa-pagaruyung-menjadu-ikon-sumatra-barat" target="_blank">https://wonderfulimage.id/read/429/kemegahan-istana-basa-pagaruyung-menjadu-ikon-sumatra-barat</a></li>
-                <li><a href="https://wonderfulimage.id/read/381/keunikan-motif-batik-batam-yang-mencuri-perhatian" target="_blank">https://wonderfulimage.id/read/381/keunikan-motif-batik-batam-yang-mencuri-perhatian</a></li>
-                <li><a href="https://wonderfulimage.id/read/286/kerajinan-ukiran-patung-kayu-tradisional-bali" target="_blank">https://wonderfulimage.id/read/286/kerajinan-ukiran-patung-kayu-tradisional-bali</a></li>
-                <li><a href="https://wonderfulimage.id/read/149/eksotisme-desa-adat-ratenggaro" target="_blank">https://wonderfulimage.id/read/149/eksotisme-desa-adat-ratenggaro</a></li>
-                <li><a href="https://wonderfulimage.id/read/89/waisak-borobudur" target="_blank">https://wonderfulimage.id/read/89/waisak-borobudur</a></li>
-                <li><a href="https://wonderfulimage.id/read/128/festival-morotai-land-of-stories-tampilkan-bambu-tada-dan-tari-kolosal" target="_blank">https://wonderfulimage.id/read/128/festival-morotai-land-of-stories-tampilkan-bambu-tada-dan-tari-kolosal</a></li>
-                <li><a href="https://wonderfulimage.id/read/175/memperlihatkan-toleransi-dari-perang-topat" target="_blank">https://wonderfulimage.id/read/175/memperlihatkan-toleransi-dari-perang-topat</a></li>
-                <li><a href="https://wonderfulimage.id/read/305/desa-adat-todo" target="_blank">https://wonderfulimage.id/read/305/desa-adat-todo</a></li>
-                <li><a href="https://wonderfulimage.id/read/434/rumah-gadang-ukiran-cina" target="_blank">https://wonderfulimage.id/read/434/rumah-gadang-ukiran-cina</a></li>
-                <li><a href="https://wonderfulimage.id/read/287/seniman-ukir-kayu-di-tengah-pandemi" target="_blank">https://wonderfulimage.id/read/287/seniman-ukir-kayu-di-tengah-pandemi</a></li>
-                <li><a href="https://wonderfulimage.id/read/272/uniknya-pacu-jawi-tanah-datar" target="_blank">https://wonderfulimage.id/read/272/uniknya-pacu-jawi-tanah-datar</a></li>
+                <li><a href="https://wonderfulimage.id/read/301/dieng-culture-festival" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/301/dieng-culture-festival</a></li>
+                <li><a href="https://wonderfulimage.id/read/429/kemegahan-istana-basa-pagaruyung-menjadu-ikon-sumatra-barat" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/429/kemegahan-istana-basa-pagaruyung-menjadu-ikon-sumatra-barat</a></li>
+                <li><a href="https://wonderfulimage.id/read/381/keunikan-motif-batik-batam-yang-mencuri-perhatian" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/381/keunikan-motif-batik-batam-yang-mencuri-perhatian</a></li>
+                <li><a href="https://wonderfulimage.id/read/286/kerajinan-ukiran-patung-kayu-tradisional-bali" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/286/kerajinan-ukiran-patung-kayu-tradisional-bali</a></li>
+                <li><a href="https://wonderfulimage.id/read/149/eksotisme-desa-adat-ratenggaro" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/149/eksotisme-desa-adat-ratenggaro</a></li>
+                <li><a href="https://wonderfulimage.id/read/89/waisak-borobudur" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/89/waisak-borobudur</a></li>
+                <li><a href="https://wonderfulimage.id/read/128/festival-morotai-land-of-stories-tampilkan-bambu-tada-dan-tari-kolosal" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/128/festival-morotai-land-of-stories-tampilkan-bambu-tada-dan-tari-kolosal</a></li>
+                <li><a href="https://wonderfulimage.id/read/175/memperlihatkan-toleransi-dari-perang-topat" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/175/memperlihatkan-toleransi-dari-perang-topat</a></li>
+                <li><a href="https://wonderfulimage.id/read/305/desa-adat-todo" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/305/desa-adat-todo</a></li>
+                <li><a href="https://wonderfulimage.id/read/434/rumah-gadang-ukiran-cina" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/434/rumah-gadang-ukiran-cina</a></li>
+                <li><a href="https://wonderfulimage.id/read/287/seniman-ukir-kayu-di-tengah-pandemi" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/287/seniman-ukir-kayu-di-tengah-pandemi</a></li>
+                <li><a href="https://wonderfulimage.id/read/272/uniknya-pacu-jawi-tanah-datar" target="_blank" rel="noreferrer">https://wonderfulimage.id/read/272/uniknya-pacu-jawi-tanah-datar</a></li>
               </ul>
             </div>
             <div className="ref-item">

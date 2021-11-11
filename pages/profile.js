@@ -24,9 +24,9 @@ export default function Profile() {
             </figure>
             <div className="profile-content">
                 <p>I currently a student in Vocational High School 5 Batam, Riau Islands. I majored in Multimedia.</p>
-                <p>I'm the type of person who gets bored easily so I often try new things. I love to explore the IT world. It started when I was in junior high school. I got to know MyWapBlog.com, a blogging platform for mobile phones created by Arvind Gupta. At that time, i'm exploring, and I also got to know PHP, HTML, CSS and JavaScript through that platform.</p>
+                <p>I&apos;m the type of person who gets bored easily so I often try new things. I love to explore the IT world. It started when I was in junior high school. I got to know MyWapBlog.com, a blogging platform for mobile phones created by Arvind Gupta. At that time, i&apos;m exploring, and I also got to know PHP, HTML, CSS and JavaScript through that platform.</p>
                 <p>At first I only studied HTML and PHP, at that time I was very anti-CSS and JavaScript. But over time I also like CSS and JavaScript, even now I prefer to do amazing things in front-end.</p>
-                <p>In the past i'm is anti-framework person too, but now I'm also learning Laravel and ReactJS.</p>
+                <p>In the past i&apos;m is anti-framework person too, but now I&apos;m also learning Laravel and ReactJS.</p>
                 <h3>My Achivements</h3>
                 <ul className="list">
                     <li>3<sup>rd</sup> Place Web Technologies LKS Nasional 2021.</li>

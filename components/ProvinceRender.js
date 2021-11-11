@@ -29,7 +29,7 @@ export default function ProvinceRender({provinceData}){
 						{provinceData[province].listCulture?(
 							<ul>
 								{provinceData[province].listCulture.map((culture, index) => (
-						            <li><Link href={culture.slug} key={index}>{culture.frontmatter.title}</Link></li>
+						            <li key={index}><Link href={culture.slug} key={index}>{culture.frontmatter.title}</Link></li>
 						        ))}
 							</ul>):<></>}
 						<Link href={'/culture/'+provinceData[province].slug}><a className="more">Show More</a></Link>
