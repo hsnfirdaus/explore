@@ -59,6 +59,8 @@ export default function References() {
                 <li><a href="https://wonderfulimage.id/read/175/memperlihatkan-toleransi-dari-perang-topat" target="_blank">https://wonderfulimage.id/read/175/memperlihatkan-toleransi-dari-perang-topat</a></li>
                 <li><a href="https://wonderfulimage.id/read/305/desa-adat-todo" target="_blank">https://wonderfulimage.id/read/305/desa-adat-todo</a></li>
                 <li><a href="https://wonderfulimage.id/read/434/rumah-gadang-ukiran-cina" target="_blank">https://wonderfulimage.id/read/434/rumah-gadang-ukiran-cina</a></li>
+                <li><a href="https://wonderfulimage.id/read/287/seniman-ukir-kayu-di-tengah-pandemi" target="_blank">https://wonderfulimage.id/read/287/seniman-ukir-kayu-di-tengah-pandemi</a></li>
+                <li><a href="https://wonderfulimage.id/read/272/uniknya-pacu-jawi-tanah-datar" target="_blank">https://wonderfulimage.id/read/272/uniknya-pacu-jawi-tanah-datar</a></li>
               </ul>
             </div>
             <div className="ref-item">

@@ -408,6 +408,9 @@ ul.socmed li svg {
 .content-block a:hover {
     color: var(--primary);
 }
+.margin {
+    margin: 10px 0;
+}
 @media screen  and (max-width:425px) {
     .culture-grid {
         grid-template-columns: 1fr;

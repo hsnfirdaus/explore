@@ -59,6 +59,9 @@ export default function Index({ hero, cultureList, provinceData }) {
                 <Culture item={item} key={index} />
               ))}
             </div>
+            <div className="center margin">
+              <div className="primary-btn"><Link href="/culture">More Culture</Link></div>
+            </div>
           </div>
         </section>
       </Layout>
