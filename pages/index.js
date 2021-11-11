@@ -70,7 +70,7 @@ export async function getStaticProps() {
   return {
     props: {
       hero: listCulture(0,1),
-      cultureList: listCulture(1,3),
+      cultureList: listCulture(1,4),
       provinceData:{
         AC:{
           name:'Aceh',

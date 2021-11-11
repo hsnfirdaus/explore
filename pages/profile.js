@@ -32,8 +32,8 @@ export default function Profile() {
                     <li>3<sup>rd</sup> Place Web Technologies LKS Nasional 2021.</li>
                     <li>1<sup>st</sup> Place Web Technologies LKS Province Kepulauan Riau 2021.</li>
                     <li>1<sup>st</sup> Place OSC Batam Linux User Group 2021.</li>
-                    <li>1<sup>st</sup> Place HMTI Fair 2019.</li>
                     <li>1<sup>st</sup> Place HMTI Fair 2020.</li>
+                    <li>1<sup>st</sup> Place HMTI Fair 2019.</li>
                 </ul>
                 <h3>My Links</h3>
                 <ul className="socmed">

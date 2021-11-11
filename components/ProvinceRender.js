@@ -10,9 +10,8 @@ export default function ProvinceRender({provinceData}){
 	const handleProvince=(ev,isoProv)=>{
 		if(isoProv!==province){
 			let parentdiv=mapRef.current;
-			console.log(ev);
 			setMouse({
-				x:ev.pageX-parentdiv.offsetLeft,
+				x:ev.pageX-parentdiv.offsetLeft+((ev.pageX-parentdiv.offsetLeft<200)?100:0),
 				y:ev.pageY-parentdiv.offsetTop
 			});
 			setProvince(isoProv);
@@ -253,7 +252,7 @@ export default function ProvinceRender({provinceData}){
 							l0.7,0.4h0.3l0.3,0.3l0.1,0.3l0.3,1.1l0.9,2.1l0.1,0.7l0.3,2.8l0.4,0.8l0.5-0.1l0.3,0.1l0.7,0.1l0.9,0.5l1.5,0.3l1.6,0.9l1.1,0.4
 							l2,0.1l1.5,1.1l0.9,0.3h0.5l1.5,0.1l0.4,0.1l0.4,0.3l0.3,0.3l0.1,0.7l0.3,2.9l0.3,0.9l0.3,0.5l1.1,1.2l0.4,1.2l0.3,0.3l0.1,0.4
 							l0.9,3.1v0.5l0.1,0.4l0.1,0.3l0.7,0.4l0.4,0.3l0.3,0.7L317.5,385.5z"/>
-						<path id="SR" onMouseEnter={(ev)=>handleProvince(ev,'SN')} className={province==='SN'?'province-area active':'province-area'} d="M852.4,250.3l-0.5,0.3l-0.1,0.5l-0.4,1.5l-0.3,0.5l-0.4,0.4l-0.3,0.7l-0.3,1.9l-0.4,1.3l-0.3,1.3
+						<path id="SR" onMouseEnter={(ev)=>handleProvince(ev,'SR')} className={province==='SR'?'province-area active':'province-area'} d="M852.4,250.3l-0.5,0.3l-0.1,0.5l-0.4,1.5l-0.3,0.5l-0.4,0.4l-0.3,0.7l-0.3,1.9l-0.4,1.3l-0.3,1.3
 							l-0.3,0.5l-0.5,0.4l-0.7,0.1l-0.4,0.1l-0.3,0.4l-0.3,0.4l-0.3,0.4l-0.8,0.7l-0.8,0.9l-0.5,1.1v1.3l0.7,1.5v0.7l-0.1,0.4l-0.8,0.7
 							l-0.1,0.3l-0.3,0.4l0.1,0.1v0.3l0.3,2.8l0.1,0.4l0.8,2.3l-0.1,0.7l-0.7,1.3l-0.1,0.7l0.1,1.5l0.7,2.9l0.3,0.7l0.5,0.5l0.3,0.3
 							l0.3,0.1v0.3v0.4l-0.4,3.1l-0.3,0.8l-0.4,0.4l-0.5-0.1l-0.5-0.3h-0.5l-0.8,0.1L842,289l-0.7,0.9l-0.9,3.7l-0.5,0.9l-1.2,1.9
@@ -1361,7 +1360,7 @@ export default function ProvinceRender({provinceData}){
 							l0.1,0.1v0.3l-0.1,0.1h-0.3l-0.1,0.1l-1.5,0.5l-2.1,1.6l-0.5,0.3h-0.5l-0.7-0.1l-0.3-0.5l-0.1-0.7l-0.3-0.5l-0.9-0.7l-1.3-0.4
 							l-2.9-0.3l-1.2,0.1l-1.1,0.3l-8,4.3l-2.5,0.9l-1.5,0.1l-1.2-0.3l-2.8-1.6l-0.7-0.1h-1.2l-0.5-0.3v-0.4l0.4-0.7l0.3-0.3l1.1-0.9
 							l1.1-0.5l1.2-0.3l2.9-1.2h0.3L560.3,319.5z"/>
-						<g id="KS" onMouseEnter={(ev)=>handleProvince(ev,'KT')} transform="translate(492.2002,307.8738)" className={province==='KT'?'province-area active':'province-area'}>
+						<g id="KS" onMouseEnter={(ev)=>handleProvince(ev,'KS')} transform="translate(492.2002,307.8738)" className={province==='KS'?'province-area active':'province-area'}>
 							<path className="st0" d="M258.1-1.1l-0.7,1.5l-1.2,0.1l-0.4-0.4l-0.1-0.7l-0.3-0.7l-0.5-0.4H254h-0.4l-0.1,0.1L253-1.2l-0.1,0.1h-0.3
 								l-0.1-0.1h-0.1l-0.1-0.1L251-1.1h-0.4L250.3-1L250-0.7v0.4l0.1,0.1l0.5,0.3l-0.1,0.7l-0.8,1.5l0.5,0.1l1.1-1.6l0.8-0.4l0.5,0.1
 								L253,1v0.6l-0.7,1.5l-0.1,0.7l0.1,5.9l-0.1,1.2l-0.5,1.2l-0.5,1.1l-1.6,2l-0.8,0.7l-0.7,0.1l-0.5-0.3l-0.4-0.5l-0.1-1.6v-0.3

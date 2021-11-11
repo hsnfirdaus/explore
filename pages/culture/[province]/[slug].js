@@ -26,7 +26,7 @@ export default function SingleCulture({ frontmatter: {title, location, thumbnail
         </section>
         <section id="single-culture">
           <div className="wrap">
-            <div className="culture-content" dangerouslySetInnerHTML={{ __html: marked.marked(content) }}/>
+            <div className="culture-content content-block" dangerouslySetInnerHTML={{ __html: marked.marked(content) }}/>
           </div>
         </section>
       </Layout>
