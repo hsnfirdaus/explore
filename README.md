@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Explore
 
-## Getting Started
+Ini adalah website yang saya buat ketika bersekolah di SMK Negeri 5 Batam untuk HMTI Fair 2021 Politeknik Negeri Batam bidang lomba Web Design. Dibuat dengan NextJS versi 12. Menggunakan markdown sebagai kontennya dan berkonsep SSG (Static Site Generator).
 
-First, run the development server:
+Demo: [https://explore.hasanfirdaus.my.id](https://explore.hasanfirdaus.my.id)
 
-```bash
-npm run dev
-# or
+## Menjalankan Project
+
+1. Clone Repositori Ini:
+
+```shell
+git clone https://github.com/hsnfirdaus/explore.git
+```
+
+2. Install Dependensi dengan Yarn (Yarn Classic).
+
+```shell
+yarn install
+```
+
+3. Jalankan Project
+
+```shell
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build SSG
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Untuk melakukan build project menjadi Static (html, css dan JS). Gunakan perintah:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```shell
+yarn build
+yarn export
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+File statis berada di folder out.
 
-## Learn More
+## Hak Cipta
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+&copy; 2021 Muhammad Hasan Firdaus
