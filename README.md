@@ -2,7 +2,7 @@
 
 Ini adalah website yang saya buat ketika bersekolah di SMK Negeri 5 Batam untuk HMTI Fair 2021 Politeknik Negeri Batam bidang lomba Web Design. Dibuat dengan NextJS versi 12. Menggunakan markdown sebagai kontennya dan berkonsep SSG (Static Site Generator).
 
-Demo: [https://explore.hasanfirdaus.my.id](https://explore.hasanfirdaus.my.id)
+Demo: [https://explore.hasanfirdaus.com](https://explore.hasanfirdaus.com)
 
 ## Menjalankan Project
 
